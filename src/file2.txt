@@ -1,1 +1,4 @@
  this is a simple text file2
+ 
+ 
+ Adding few extra lines  to test the merge.
