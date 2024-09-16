@@ -2,3 +2,6 @@
  
  
  Adding few extra lines  to test the merge.
+
+
+ Adding few extra lines  to test auto merge.

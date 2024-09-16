@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Check if a branch name was provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <branch-name>"
+  exit 1
+fi
+
+BRANCH_NAME=$1
+
+# Fetch all remote branches
+echo "Fetching all remote branches..."
+git fetch --all
+
+# Check out the specified branch
+echo "Checking out branch '$BRANCH_NAME'..."
+git checkout "$BRANCH_NAME"
+
+# Remove unpushed commits and changes from stage or working area
+echo "Removing unpushed commits and changes from stage or working area..."
+git reset --hard HEAD
+git clean -fd
+
+# Pull the latest changes from the specified branch
+echo "Pulling the latest changes from branch '$BRANCH_NAME'..."
+git pull origin "$BRANCH_NAME"
+
+echo "Process completed successfully."
