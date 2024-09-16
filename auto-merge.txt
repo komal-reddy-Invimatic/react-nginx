@@ -13,7 +13,7 @@ echo "Fetching all remote branches..."
 git fetch --all
 
 # Check out the specified branch
-echo "Checking out branch '$BRANCH_NAME'..."
+echo "Checking out the branch '$BRANCH_NAME'..."
 git checkout "$BRANCH_NAME"
 
 # Remove unpushed commits and changes from stage or working area
