@@ -1,1 +1,5 @@
  this is a simple text file3
+
+
+
+ Adding few extra lines  to test auto merge.
