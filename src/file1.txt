@@ -1,4 +1,0 @@
- this is a simple text file1
-
-
-adding some more few lines to test auto merge
